@@ -46,6 +46,10 @@
             android:name=".InputsActivity"
             android:exported="false" />
 
+        <activity
+            android:name=".ViewInputs"
+            android:exported="false" />
+
     </application>
 
 </manifest>

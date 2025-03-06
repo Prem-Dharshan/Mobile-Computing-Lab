@@ -32,7 +32,7 @@ class Section1Activity : AppCompatActivity() {
             DatePickerDialog(this, { _, y, m, d ->
                 val date = "$y-${m + 1}-$d"
                 if (y in 2000..2020) dobInput.setText(date)
-                else Toast.makeText(this, "Select a date between 2000-2020", Toast.LENGTH_SHORT).show()
+                else showToast("Select a date between 2000-2020")
             }, calendar.get(Calendar.YEAR), calendar.get(Calendar.MONTH), calendar.get(Calendar.DAY_OF_MONTH)).show()
         }
 
