@@ -31,8 +31,7 @@ class Database(context: Context) : SQLiteOpenHelper(context, "CA02DB", null, 1) 
     }
 
     fun getUserById(userId: Long) = readableDatabase.use {
-        it.rawQuery("SELECT * FROM Users WHERE id = ?", arrayOf(userId.toString()))
-            .use { cursor ->
+        it.rawQuery("SELECT * FROM Users WHERE id = ?", arrayOf(userId.toString())).use { cursor ->
             if (cursor.moveToFirst()) User(
                 cursor.getLong(0),
                 cursor.getString(1),

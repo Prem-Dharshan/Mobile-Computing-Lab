@@ -33,7 +33,8 @@ class Section1Activity : AppCompatActivity() {
                 val date = "$y-${m + 1}-$d"
                 if (y in 2000..2020) dobInput.setText(date)
                 else showToast("Select a date between 2000-2020")
-            }, calendar.get(Calendar.YEAR), calendar.get(Calendar.MONTH), calendar.get(Calendar.DAY_OF_MONTH)).show()
+            }, calendar.get(Calendar.YEAR), calendar.get(Calendar.MONTH), calendar.get(Calendar.DAY_OF_MONTH))
+                .show()
         }
 
         nextBtn.setOnClickListener {
