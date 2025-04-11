@@ -31,13 +31,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+<!--    Change the theme to app compat in themes.xml-->
     <Button
         android:id="@+id/changeImageBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Change Image"
         android:background="@drawable/rect_button_bg"
-        android:textColor="#000000"
+        android:textColor="@color/black"
         android:paddingStart="24dp"
         android:paddingEnd="24dp"
         android:paddingTop="12dp"
@@ -46,5 +47,6 @@
         app:layout_constraintTop_toBottomOf="@id/foregroundImage"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
