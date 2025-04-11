@@ -1,9 +1,0 @@
-<resources>
-    <string name="app_name">Cookie Monster</string>
-    <string name="im_so_full">I\'m so full</string>
-    <string name="done">Done</string>
-    <string name="im_so_hungry">I\'m so hungry</string>
-    <string name="eat_cookie">Eat Cookie</string>
-    <string name="cookies">Cookies</string>
-    <string name="mood">mood</string>
-</resources>

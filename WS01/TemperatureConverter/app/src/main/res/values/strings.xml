@@ -1,9 +1,0 @@
-<resources>
-    <string name="app_name">Temperature Convertor</string>
-    <string name="convert_temp">Convert Temp</string>
-    <string name="enter_celsius_temp_below">Enter Celsius Temp Below</string>
-    <string name="enter_fahrenheit_temp_below">Enter Fahrenheit Temp Below</string>
-    <string name="my_temperature_converter_portrait_mode">My Temperature Converter - Portrait Mode</string>
-    <string name="hint_celsius_input"> </string>
-    <string name="hint_fahrenheit_input"> </string>
-</resources>

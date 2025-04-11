@@ -1,4 +1,0 @@
-<resources>
-    <string name="app_name">Feedback App</string>
-    <string name="rating">Rating: %1$s</string>
-</resources>
