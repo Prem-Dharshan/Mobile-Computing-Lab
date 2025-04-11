@@ -26,6 +26,7 @@ class MainActivity : AppCompatActivity() {
         var isLoading = false
         val startBtn: Button = findViewById(R.id.startBtn)
         val ctrlPanelBtn: Button = findViewById(R.id.ctrlPanelBtn)
+        val imgBtn: Button = findViewById(R.id.imgBtn)
         val loader: ProgressBar = findViewById(R.id.loader)
         val handler = Handler(Looper.getMainLooper())
 
@@ -46,6 +47,10 @@ class MainActivity : AppCompatActivity() {
                     loader.visibility = ProgressBar.INVISIBLE
                 }, 2000)
             }
+        }
+
+        imgBtn.setOnClickListener {
+            startActivity(Intent(this, ImageForm::class.java))
         }
     }
 }

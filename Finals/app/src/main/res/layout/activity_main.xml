@@ -55,4 +55,17 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.351" />
 
+    <Button
+        android:id="@+id/imgBtn"
+        android:layout_width="150dp"
+        android:layout_height="42dp"
+        android:background="#5E35B1"
+        android:text="Image View"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.202"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.351" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
