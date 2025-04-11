@@ -7,6 +7,7 @@ import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.CheckBox
+import android.widget.ProgressBar
 import android.widget.RadioGroup
 import android.widget.RatingBar
 import android.widget.Spinner
@@ -42,6 +43,12 @@ class Form2 : AppCompatActivity() {
         radioGroup = findViewById(R.id.radioGroup)
         spinner = findViewById(R.id.spinner)
         ratingBar = findViewById(R.id.ratingBar)
+
+        // Progress Bar
+        val progressBar: ProgressBar = findViewById(R.id.progressBar2)
+        progressBar.progress = 50
+        progressBar.max = 100
+
 
         // Setup Spinner
         val options = arrayOf("Select an option", "Item 1", "Item 2", "Item 3")

@@ -9,6 +9,9 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
 class ImageForm : AppCompatActivity() {
+
+    private var isOriginalImage = true  // Tracks which image is showing
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -24,7 +27,12 @@ class ImageForm : AppCompatActivity() {
         val changeImageBtn = findViewById<Button>(R.id.changeImageBtn)
 
         changeImageBtn.setOnClickListener {
-            foregroundImage.setImageResource(R.drawable.ic_launcher_foreground)
+            if (isOriginalImage) {
+                foregroundImage.setImageResource(R.drawable.ic_launcher_foreground)
+            } else {
+                foregroundImage.setImageResource(R.drawable.foreground_img)
+            }
+            isOriginalImage = !isOriginalImage  // Toggle the flag
         }
     }
 }
